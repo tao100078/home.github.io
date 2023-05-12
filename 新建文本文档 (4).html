@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+</head>
+<body>
+
+
+<input type="button" onclick="javascript:ss()" value="点击1，生成表头"></input>
+<input type="button" onclick="javascript:qq()" value="点击2，生成数据"></input>
+    <div id="ww2" >
+         <span id="ww" ></span>
+    </div>
+
+<script>
+    function ss(){
+        var a ="";
+        for(var i=9;i<39;i++){
+
+            a = a+"<br>"+ "th("+i+",0) = \" align=\"\"left\"\" \"<br>th("+i+",1) = tempdoc.fldFied_"+(i-9+1)+"(0)"
+        }
+        document.getElementById("ww").innerHTML=a;
+    }
+    function qq(){
+        var a ="";
+        for(var i=9;i<39;i++){
+
+            a = a+"<br>"+ "th("+i+",1) = tempdoc.fldFied_"+(i-9+1)+"(0)"
+        }
+        document.getElementById("ww").innerHTML=a;
+    }
+</script>
+
+</body>
+<html
+
